@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BinaryData>
+	<DataStruct>
+		<Item length="8">BDT_DOUBLE</Item>
+		<Item length="8">BDT_DOUBLE</Item>
+	</DataStruct>
+	<DataProperties>
+		<DataFilePath type="String">E:\\DEVELOPERKIT\\Work\\txt2\\cha_AUV.txt2</DataFilePath>
+		<DimensionCount type="Long">2</DimensionCount>
+		<DataCountSet type="Long_Array">721,23543</DataCountSet>
+	</DataProperties>
+</BinaryData>

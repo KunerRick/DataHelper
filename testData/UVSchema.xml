@@ -1,0 +1,13 @@
+<UdxDeclaration name="Init 初始化参数" description="as我是谁">
+    <UdxNode>
+        <UdxNode name="DataList" type="DTKT_LIST" description="时间分段">
+            <UdxNode name="DataIndex" type="DTKT_DOUBLE" description="单个时间段中的uv值"/>
+        </UdxNode>
+    </UdxNode>
+    <SemanticAttachment>
+        <Concepts/>
+        <SpatialRefs/>
+        <Units/>
+        <DataTemplates/>
+    </SemanticAttachment>
+</UdxDeclaration>
