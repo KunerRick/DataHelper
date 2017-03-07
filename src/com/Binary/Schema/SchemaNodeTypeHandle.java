@@ -76,6 +76,9 @@ public class SchemaNodeTypeHandle {
 			logger.warn("the TypeStr can not be null.");
 		}
 		ESchemaNodeType SchemaNodeType=null;
+		switch(TypeStr){
+		
+		}
 		return SchemaNodeType;
 	}
 }
