@@ -5,8 +5,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.Binary.BinaryTest;
+import com.Binary.BinDataset.BinUdxDataset;
+import com.Binary.BinNode.BinNode;
+import com.Binary.BinNode.BinRealListNode;
 import com.Binary.Schema.ESchemaNodeType;
+import com.Binary.Schema.SchemaInfo;
 import com.Binary.Schema.SchemaNodeTypeHandle;
+import com.Binary.Schema.SchemaRead;
 import com.dataUtil.util.UdxBuilder;
 
 
@@ -26,8 +31,11 @@ public class Main {
 //			logger.info("get data error.");
 //		}
 //		udxBuilder.Finish();
-		SchemaNodeTypeHandle.SchemaNodeType2String(ESchemaNodeType.EDTKT_INT);
-		
+		BinUdxDataset udxDataset = new BinUdxDataset("E:\\Kuner\\work\\JWorkSpace\\DataHelper\\testData\\UVSchema.xml");
+		BinNode binNode = udxDataset.getRootNode();
+		((BinRealListNode)binNode.getChildNode(0).getChildNode(0)).setSeekBegin(12);
+		long a=((BinRealListNode)binNode.getChildNode(0).getChildNode(0)).getSeekBegin();
+		logger.warn("finish {}.",a);
 		
 		
 	}

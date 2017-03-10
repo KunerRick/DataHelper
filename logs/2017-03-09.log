@@ -1,0 +1,19 @@
+2017-03-09 16:12:12.812 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the TypeStr is not correct.
+2017-03-09 21:15:11.599 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the TypeStr is not correct.
+2017-03-09 21:15:11.604 [main] WARN  com.Binary.BinNode.BinNode - the schema node type can not be null.
+2017-03-09 21:15:11.604 [main] WARN  com.Binary.BinNode.BinNode - the name can not be null.
+2017-03-09 21:15:11.604 [main] WARN  com.Binary.BinNode.BinNode - the schema node type can not be null.
+2017-03-09 21:22:46.654 [main] WARN  com.Binary.BinNode.BinNode - the name can not be null.
+2017-03-09 21:22:46.666 [main] WARN  com.Binary.BinNode.BinNode - the schema node type can not be null.
+2017-03-09 21:23:23.839 [main] WARN  com.datahelper.main.Main - finish.
+2017-03-09 21:58:06.211 [main] WARN  com.datahelper.main.Main - finish.DataIndex
+2017-03-09 22:33:54.615 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:33:54.619 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:34:20.585 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:34:20.589 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:36:10.930 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:36:10.941 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:36:42.097 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:36:42.101 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:48:40.649 [main] WARN  com.Binary.BinNode.BinNode - the binary node for adding can not be null.
+2017-03-09 22:56:45.052 [main] WARN  com.datahelper.main.Main - finish.12
