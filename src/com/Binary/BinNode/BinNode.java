@@ -86,10 +86,17 @@ public class BinNode {
 			logger.warn("have no childNode,please check Schema.");
 			return null;
 		}
+		
+		
 		BinNode ChildNode = SchemaNodeTypeHandle.instantiateBinNode(this.getThisSchemaInfo().getChildNode(0).getNodeType());
+		SchemaInfo  ChildSchema = this.getThisSchemaInfo().getChildNode(0);
 		ChildNode.setCurrentIndex(index);
-		ChildNode.setThisSchemaInfo(this.getThisSchemaInfo().getChildNode(0));
-		ChildNode.setParentNode(this);
+		ChildNode.setThisSchemaInfo(ChildSchema);
+		ChildNode.setParentNode(this);	
+		ChildNode.setBinaryDataFilepath(this.getBinaryDataFilepath());
+		ChildNode.setENodeType(ChildSchema.getNodeType());
+		ChildNode.setDataSize(ChildSchema.getDataSize());
+		ChildNode.setName(ChildSchema.getNodeName());
 		return ChildNode;
 	}
 	public long getDataSize() {

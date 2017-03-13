@@ -62,6 +62,7 @@ public class SchemaRead {
 			 Element UdxSchemaNodesElem=(Element) UdxSchemaNodes.get(i);
 			 SchemaInfo childSchemaInfo = new SchemaInfo();			
 			this.foreachUdxSchemaNodes(UdxSchemaNodesElem,childSchemaInfo);	
+			rootInfo.setDataSize(rootInfo.getDataSize()+1);
 			 rootInfo.addChildNode(childSchemaInfo);
 		}			   
 		return true;

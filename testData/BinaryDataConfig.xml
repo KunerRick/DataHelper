@@ -5,7 +5,7 @@
 		<Item length="8">BDT_DOUBLE</Item>
 	</DataStruct>
 	<DataProperties>
-		<DataFilePath type="String">E:\\DEVELOPERKIT\\Work\\txt2\\cha_AUV.txt2</DataFilePath>
+		<DataFilePath type="String">E:\\Kuner\\model\\二进制数据\\cha_AUV.txt2</DataFilePath>
 		<DimensionCount type="Long">2</DimensionCount>
 		<DataCountSet type="Long_Array">721,23543</DataCountSet>
 	</DataProperties>

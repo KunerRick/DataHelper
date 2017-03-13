@@ -1,0 +1,91 @@
+2017-03-13 17:40:32.865 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null.
+2017-03-13 17:40:58.922 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null.
+2017-03-13 17:41:51.956 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null.
+2017-03-13 17:42:29.947 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null.
+2017-03-13 17:45:07.591 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null.
+2017-03-13 17:48:37.403 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 17:49:06.709 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 17:49:44.775 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 17:51:42.177 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 17:57:40.774 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 17:58:59.876 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 17:59:01.958 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 0.
+2017-03-13 17:59:21.765 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:02:49.468 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 0.
+2017-03-13 18:11:17.992 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:14:42.278 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:18:12.302 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:18:12.311 [main] WARN  com.Binary.BinNode.BinNode - have no childNode,please check Schema.
+2017-03-13 18:22:01.874 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:22:48.312 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:28:34.994 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:29:16.949 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:29:57.121 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:31:56.777 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:39:06.623 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:40:27.050 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 18:41:04.880 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:07:32.572 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:07:58.919 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:10:16.521 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:18:21.524 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:18:35.543 [main] WARN  com.util.HandleBinary - the Binary file path can not be null.
+2017-03-13 19:18:55.311 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:19:41.989 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:19:49.463 [main] WARN  com.util.HandleBinary - the node type of binNode can not be null.
+2017-03-13 19:19:49.463 [main] WARN  com.util.HandleBinary - the node type of binNode can not be null.
+2017-03-13 19:19:49.464 [main] WARN  com.datahelper.main.Main - finish null.
+2017-03-13 19:21:13.542 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:26:48.146 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:26:48.151 [main] WARN  com.Binary.BinNode.BinNode - the schema node type can not be null.
+2017-03-13 19:26:48.151 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 0.
+2017-03-13 19:28:42.282 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:30:10.421 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:31:43.466 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:33:25.293 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:33:25.298 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 1.
+2017-03-13 19:34:27.835 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:35:55.924 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:36:05.244 [main] WARN  com.datahelper.main.Main - finish [-0.23756069195886204, -0.017623671145451728].
+2017-03-13 19:37:56.081 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:38:42.018 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:40:59.451 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:41:44.518 [main] WARN  com.datahelper.main.Main - finish [-0.1704262766122077, -0.1359789982290588].
+2017-03-13 19:43:02.163 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:43:27.496 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:43:56.364 [main] WARN  com.datahelper.main.Main - finish [-0.1704262766122077, -0.1359789982290588].
+2017-03-13 19:44:24.278 [main] WARN  com.dataUtil.util.DataFactory - to read the config file failed. info as follows:
+ org.dom4j.DocumentException: E:\DEVELOPERKIT\Work\JWorkSpace\DataHelper\testData\BinaryDataConfig.xml (系统找不到指定的路径。) Nested exception: E:\DEVELOPERKIT\Work\JWorkSpace\DataHelper\testData\BinaryDataConfig.xml (系统找不到指定的路径。) 
+
+2017-03-13 19:44:24.284 [main] INFO  com.datahelper.main.Main - get data error.
+2017-03-13 19:44:24.349 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:46:08.956 [main] WARN  com.dataUtil.util.UdxBuilder - File E:\\DEVELOPERKIT\\Work\\txt2\\cha_AUV.txt2 not exists,please check.
+2017-03-13 19:46:08.962 [main] ERROR com.dataUtil.util.UdxBuilder - the begin location is not correct. 
+ begin: 64  total: 0 
+2017-03-13 19:46:08.962 [main] INFO  com.datahelper.main.Main - get data error.
+2017-03-13 19:46:08.967 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:46:08.969 [main] WARN  com.datahelper.main.Main - finish [-0.1704262766122077, -0.1359789982290588].
+2017-03-13 19:47:43.242 [main] INFO  com.datahelper.main.Main - the data string is -0.1704262766122077
+-0.1359789982290588
+.
+2017-03-13 19:47:43.252 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:47:43.253 [main] WARN  com.datahelper.main.Main - finish [-0.1704262766122077, -0.1359789982290588].
+2017-03-13 19:47:59.307 [main] WARN  com.dataUtil.util.UdxBuilder - File E:\\DEVELOPERKIT\\Work\\txt2\\cha_AUV.txt2 not exists,please check.
+2017-03-13 19:47:59.312 [main] ERROR com.dataUtil.util.UdxBuilder - the begin location is not correct. 
+ begin: 64  total: 0 
+2017-03-13 19:47:59.313 [main] INFO  com.datahelper.main.Main - get data error.
+2017-03-13 19:47:59.317 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:47:59.319 [main] WARN  com.datahelper.main.Main - finish [-0.1704262766122077, -0.1359789982290588].
+2017-03-13 19:48:54.264 [main] INFO  com.datahelper.main.Main - the data string is 
+ -0.1704262766122077   -0.1359789982290588   
+2017-03-13 19:48:54.274 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:48:54.275 [main] WARN  com.datahelper.main.Main - finish [-0.1704262766122077, -0.1359789982290588].
+2017-03-13 19:49:26.004 [main] INFO  com.datahelper.main.Main - the data string is 
+ -0.262532511403963   -0.10925140493963842   
+2017-03-13 19:49:26.015 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:49:26.016 [main] WARN  com.datahelper.main.Main - finish [-0.262532511403963, -0.10925140493963842].
+2017-03-13 19:50:07.637 [main] INFO  com.datahelper.main.Main - the data string is 
+ -0.262532511403963   -0.10925140493963842   
+2017-03-13 19:50:07.648 [main] WARN  com.Binary.Schema.SchemaNodeTypeHandle - the NodeType in instantiateBinNode is null,here will Initialize as BinNode.
+2017-03-13 19:50:07.649 [main] WARN  com.datahelper.main.Main - finish 
+ [-0.262532511403963, -0.10925140493963842]

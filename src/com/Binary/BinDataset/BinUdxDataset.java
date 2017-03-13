@@ -27,9 +27,7 @@ public class BinUdxDataset {
 	}
 	public BinNode getRootNode(){
 		
-		BinNode rootNode = SchemaNodeTypeHandle.instantiateBinNode(StaticSchemaInfo.getSchemaInfo().getNodeType());
-		rootNode.setThisSchemaInfo(StaticSchemaInfo.getSchemaInfo());
-		rootNode.setBinaryDataFilepath(BinaryFilePath);
+		
 		
 		return this.binNode;
 	}
@@ -39,8 +37,13 @@ public class BinUdxDataset {
 			logger.warn("Init schemaInfo failed.");
 			return false;
 		}
-		binNode=new BinNode();
-		binNode.setName("RootNode");
+		BinNode rootNode = SchemaNodeTypeHandle.instantiateBinNode(StaticSchemaInfo.getSchemaInfo().getNodeType());
+		SchemaInfo a=StaticSchemaInfo.getSchemaInfo();
+		rootNode.setThisSchemaInfo(a);
+		rootNode.setBinaryDataFilepath(BinaryFilePath);
+		rootNode.setName(a.getNodeName());
+		rootNode.setDataSize(a.getDataSize());
+		binNode=rootNode;
 		return true;
 	}
 	

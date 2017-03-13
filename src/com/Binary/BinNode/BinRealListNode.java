@@ -26,6 +26,9 @@ public class BinRealListNode extends BinNode{
 		this.setBeginSeek(beginSeek);
 	}
 	public List<Double> getDataList() {
+		if(!connectData()){
+			return null;
+		}
 		return Data;
 	}
 	/**
@@ -58,6 +61,7 @@ public class BinRealListNode extends BinNode{
 			logger.warn("DataSize is {}.maybe something wrong or have no data.",this.getDataSize());
 		}
 		//calculate BeginSeek
+		Data=new ArrayList<Double>();
 		long oneDataLength = 8*this.getDataSize();
 		List<Long> ChildCount = new ArrayList<Long>();
 		List<Long> LocationIndex = new ArrayList<Long>();
@@ -81,20 +85,21 @@ public class BinRealListNode extends BinNode{
 		}
 		long[] dataCount = new long[ChildCount.size()];
 		long[] location = new long[ChildCount.size()];
-		for(int i=0;i<ChildCount.size();i++){
-			dataCount[i]=ChildCount.get(i);
-			location[i] = LocationIndex.get(i);
+		for(int i=ChildCount.size()-1;i>=0;i--){
+			dataCount[ChildCount.size()-i-1]=ChildCount.get(i);
+			location[ChildCount.size()-i-1] = LocationIndex.get(i)+1;
 		}
 		
 		
 		long seek = DataFactory.getSeekBegin(oneDataLength, location, dataCount);
-		this.setBeginSeek(seek);
+		
 		HandleBinary handleBinary = new HandleBinary(this.getBinaryDataFilepath());
 		if(!handleBinary.beginRead()){
 			return false;
 		}
 	
 		for(int i=0;i<this.getDataSize();i++){
+			this.setBeginSeek(seek+i*8);
 			handleBinary.ReadData(this);
 		}
 		

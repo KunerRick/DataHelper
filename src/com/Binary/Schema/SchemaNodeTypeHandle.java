@@ -143,10 +143,11 @@ public class SchemaNodeTypeHandle {
 	 */
 	public static  BinNode instantiateBinNode(ESchemaNodeType NodeType){
 		if(NodeType==null){
-			logger.warn("the NodeType in instantiateBinNode is null.");
-			return null;
+			logger.warn("the NodeType in instantiateBinNode is null,here will Initialize as BinNode.");
+			return new BinNode();
 		}
 		BinNode binNode=null;
+		
 		switch(NodeType){
 		case EDTKT_LIST:
 			binNode=new BinNode();
@@ -155,7 +156,8 @@ public class SchemaNodeTypeHandle {
 			binNode = new BinRealListNode();
 			break;
 		default:
-			return null;		
+			binNode=new BinNode();
+			break;
 		}
 		return binNode;
 	}

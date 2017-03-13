@@ -67,7 +67,8 @@ public class HandleBinary {
 		switch(binNode.getENodeType()){
 		case EDTKT_REAL_LIST:
 			BinRealListNode Node = (BinRealListNode) binNode;
-			Node.addDoubleData(BinaryIO.readDouble(RAfile,binNode.getBeginSeek()));
+			Double rslt =BinaryIO.readDouble(RAfile,binNode.getBeginSeek()); 
+			Node.addDoubleData(rslt);
 			break;
 		default:			
 			logger.warn("can't  suport this type: {}.",binNode.getENodeType().name());

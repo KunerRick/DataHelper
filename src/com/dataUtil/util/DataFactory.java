@@ -265,7 +265,7 @@ public class DataFactory {
 				return "";
 								
 			}
-			rslt+="\n";
+			rslt+="   ";
 		}
 		return rslt;
 	}
