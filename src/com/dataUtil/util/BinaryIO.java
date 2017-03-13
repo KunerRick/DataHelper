@@ -21,7 +21,6 @@ import com.util.DataConversion;
  */
 public class BinaryIO {
 	final static Logger logger=LoggerFactory.getLogger(BinaryIO.class);
-	// public static enum BinarySaveType{Double,Int};
 	/**
 	 * Get long integer data from binary file.
 	 * 
@@ -33,6 +32,28 @@ public class BinaryIO {
 		long rslt = 0;
 		byte[] longBytes = new byte[8];
 		try {
+			in.read(longBytes, 0, 8);
+			rslt = DataConversion.bytesToLong(longBytes);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			logger.error("Read long error.");
+
+		}
+		return rslt;
+	}
+	/**
+	 * 
+	 * @param in
+	 * @param beginSeek
+	 * 	set the seek location.
+	 * @return
+	 */
+	public static long readLong(RandomAccessFile in,long beginSeek) {
+		long rslt = 0;
+		byte[] longBytes = new byte[8];
+		try {
+			in.seek(beginSeek);
 			in.read(longBytes, 0, 8);
 			rslt = DataConversion.bytesToLong(longBytes);
 		} catch (IOException e) {
@@ -59,12 +80,24 @@ public class BinaryIO {
 			rslt = DataConversion.bytesToInt(intBytes);
 
 		} catch (IOException e) {
-			e.printStackTrace();
-			logger.error("Int Read Error.");
+			logger.error("Int Read Error.\n {}",e.getMessage());
 		}
 		return rslt;
 	}
+	
+	public static int readInt(RandomAccessFile in,long beginSeek) {
+		int rslt = 0;
+		byte[] intBytes = new byte[4];
+		try {
+			in.seek(beginSeek);
+			in.read(intBytes, 0, 4);
+			rslt = DataConversion.bytesToInt(intBytes);
 
+		} catch (IOException e) {
+			logger.error("Int Read Error.\n {}",e.getMessage());
+		}
+		return rslt;
+	}
 	/**
 	 * Get float data from binary file.
 	 * 
@@ -78,12 +111,24 @@ public class BinaryIO {
 		try {
 			in.read(floatBytes, 0, 4);
 		} catch (IOException e) {
-			e.printStackTrace();
-			logger.error("Float read  error.");
+			
+			logger.error("Float read  error.\n {}",e.getMessage());
 		}
 		return rslt;
 	}
 
+	public static float readFloat(RandomAccessFile in,long beginSeek) {
+		float rslt = 0;
+		byte[] floatBytes = new byte[4];
+		try {
+			in.seek(beginSeek);
+			in.read(floatBytes, 0, 4);
+		} catch (IOException e) {
+			
+			logger.error("Float read  error.\n {}",e.getMessage());
+		}
+		return rslt;
+	}
 	/**
 	 * Get double data from binary file.
 	 * 
@@ -98,8 +143,22 @@ public class BinaryIO {
 			in.read(doubleBytes, 0, 8);
 			rslt = DataConversion.bytesToDouble(doubleBytes);
 		} catch (IOException e) {
-			e.printStackTrace();
-			logger.error("Double read error.");
+			
+			logger.error("Double read error.\n {} ",e.getMessage());
+		}
+		return rslt;
+	}
+
+	public static double readDouble(RandomAccessFile in,long beginSeek) {
+		double rslt = 0.0;
+		byte[] doubleBytes = new byte[8];
+		try {
+			in.seek(beginSeek);
+			in.read(doubleBytes, 0, 8);
+			rslt = DataConversion.bytesToDouble(doubleBytes);
+		} catch (IOException e) {
+			
+			logger.error("Double read error.\n {} ",e.getMessage());
 		}
 		return rslt;
 	}
@@ -123,12 +182,58 @@ public class BinaryIO {
 			rslt = DataConversion.charsToString(DataConversion
 					.byteToChars(stringBytes));
 		} catch (IOException e) {
-			e.printStackTrace();
-			logger.error("read String error.");
+			
+			logger.error("read String error. \n {}",e.getMessage());
 		}
 		return rslt;
 	}
 
+	public static String readString(RandomAccessFile in, int StringLength,long beginSeek) {
+		String rslt = "";
+		if (StringLength <= 0) {
+			logger.warn("String length should be more than 0.");
+			return rslt;
+		}
+		byte[] stringBytes = new byte[StringLength];
+		try {
+			in.seek(beginSeek);
+			in.read(stringBytes, 0, StringLength);
+			rslt = DataConversion.charsToString(DataConversion
+					.byteToChars(stringBytes));
+		} catch (IOException e) {
+			e.printStackTrace();
+			logger.error("read String error. \n {}",e.getMessage());
+		}
+		return rslt;
+	}
+
+	/**
+	 *  
+	 * @param in
+	 * 		Random Access File.
+	 * @param BytesSize
+	 * 		the length of the data in binary file.
+	 * @param beginSeek
+	 * 		the begin seek location
+	 * @return
+	 * 		the byte array
+	 */
+	public static byte[] read(RandomAccessFile in, int BytesSize,long beginSeek){
+		byte[] rslt = null;
+		if (BytesSize <= 0) {
+			logger.warn("String length should be more than 0.");
+			return rslt;
+		}
+		byte[] Bytes = new byte[BytesSize];
+		try {
+			in.seek(beginSeek);
+			in.read(Bytes, 0, BytesSize);
+		} catch (IOException e) {
+			logger.error("read binary error in read() method. \n {}",e.getMessage());
+		}
+		return rslt;
+	}
+	
 	/**
 	 * Write long integer data to the DataOutputStrem
 	 * 

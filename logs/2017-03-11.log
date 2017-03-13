@@ -1,0 +1,8 @@
+2017-03-11 17:00:55.321 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 1.
+2017-03-11 17:01:54.757 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 1.
+2017-03-11 17:35:37.236 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 1.
+2017-03-11 17:35:46.987 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 1.
+2017-03-11 17:43:39.181 [main] WARN  com.Binary.BinNode.BinNode - the index = 0 is out of range, the ChildCount is 0.
+2017-03-11 17:51:53.144 [main] WARN  com.Binary.BinNode.BinNode - the index = 1 is out of range, the ChildCount is 1.
+2017-03-11 17:53:09.201 [main] WARN  com.Binary.BinNode.BinNode - the index = 0 is out of range, the ChildCount is 1.
+2017-03-11 17:58:29.564 [main] WARN  com.Binary.BinNode.BinNode - the data is null or length <= 0 .

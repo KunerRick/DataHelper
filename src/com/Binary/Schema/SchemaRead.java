@@ -47,13 +47,23 @@ public class SchemaRead {
 		}
 		Element root =doc.getRootElement();		
 		List UdxSchemaNodes = root.selectNodes("/UdxDeclaration/UdxNode");
-		UdxSchemaNodes.get(0);
 		if(UdxSchemaNodes.size()<=0){
 			logger.error(" Udx schema node does not exist.");
 			return false;
 		}
-	    Element UdxSchemaNodesElem=(Element) UdxSchemaNodes.get(0);		
-		this.foreachUdxSchemaNodes(UdxSchemaNodesElem,this.SchemaInfo);	
+		//根节点
+		SchemaInfo rootInfo = new SchemaInfo(); 
+		rootInfo.setNodeName("rootNode");
+		this.SchemaInfo=rootInfo;
+		
+		
+		
+		for(int i=0;i<UdxSchemaNodes.size();i++){
+			 Element UdxSchemaNodesElem=(Element) UdxSchemaNodes.get(i);
+			 SchemaInfo childSchemaInfo = new SchemaInfo();			
+			this.foreachUdxSchemaNodes(UdxSchemaNodesElem,childSchemaInfo);	
+			 rootInfo.addChildNode(childSchemaInfo);
+		}			   
 		return true;
 		
 	}
@@ -71,12 +81,13 @@ public class SchemaRead {
 			Element childNodeElem=(Element)elements.get(i);
 			String name=childNodeElem.attributeValue("name");
 			String NodeTypeStr = childNodeElem.attributeValue("type");
-
+			long DataSize = Long.parseLong(childNodeElem.attributeValue("size"));
 			ESchemaNodeType NodeType = SchemaNodeTypeHandle.String2SchemaNodeType(NodeTypeStr);
 			
 			String NodeDescription = childNodeElem.attributeValue("description");
 			schemaInfo.setNodeName(name);
 			schemaInfo.setNodeType(NodeType);
+			schemaInfo.setDataSize(DataSize);
 			schemaInfo.setDescription(NodeDescription);			
 			
 			SchemaInfo childSchemaInfo=new SchemaInfo();

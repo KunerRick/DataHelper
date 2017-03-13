@@ -31,10 +31,17 @@ public class Main {
 //			logger.info("get data error.");
 //		}
 //		udxBuilder.Finish();
-		BinUdxDataset udxDataset = new BinUdxDataset("E:\\Kuner\\work\\JWorkSpace\\DataHelper\\testData\\UVSchema.xml");
+		BinUdxDataset udxDataset = new BinUdxDataset("E:\\Kuner\\work\\JWorkSpace\\DataHelper\\testData\\UVSchema.xml","s");
 		BinNode binNode = udxDataset.getRootNode();
-		((BinRealListNode)binNode.getChildNode(0).getChildNode(0)).setSeekBegin(12);
-		long a=((BinRealListNode)binNode.getChildNode(0).getChildNode(0)).getSeekBegin();
+//		BinNode DataList1=  binNode.getChildNode(0);
+//		DataList1.setDataSize(721);
+//		BinNode DataList2 = DataList1.getChildNode(0);
+//		DataList2.setDataSize(23543);
+//		BinNode DataIndex = binNode.getChildNode(0).getChildNode(0).getChildNode(0);
+//		DataIndex.setDataSize(2);
+//		
+		
+		Double a=((BinRealListNode)binNode.getChildNode(0).getChildNode(1).getChildNode(1)).getData(2);
 		logger.warn("finish {}.",a);
 		
 		

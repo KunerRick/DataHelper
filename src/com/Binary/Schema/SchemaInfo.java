@@ -12,7 +12,8 @@ public class SchemaInfo {
 	private ESchemaNodeType NodeType=null;
 	private String Description=null;
 	private List<SchemaInfo> ChildNode=null;
-	private int ChildCount=0;
+	private int ChildCount = 0;
+	private long DataSize = 0;
 	public String getNodeName() {
 		return NodeName;
 	}
@@ -57,6 +58,12 @@ public class SchemaInfo {
 				logger.info(schemaInfo.getNodeName());				
 				foreachSchemaInfo(schemaInfo.getChildNode(i));
 			}						
+	}
+	public long getDataSize() {
+		return DataSize;
+	}
+	public void setDataSize(long dataSize) {
+		DataSize = dataSize;
 	}
 	
 }

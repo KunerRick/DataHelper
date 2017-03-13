@@ -1,8 +1,8 @@
 <UdxDeclaration name="Init 初始化参数" description="as我是谁">
     <UdxNode>
-        <UdxNode name="DataList1" type="DTKT_LIST" description="时间分段">
-            <UdxNode name="DataList2" type="DTKT_LIST" description="单个时间段中的uv值">
-            	<UdxNode name="DataIndex" type="DTKT_REAL | DTKT_LIST" description="每个三角形中心点的UV值"></UdxNode>
+        <UdxNode name="DataList1" type="DTKT_LIST" size="721" description="时间分段">
+            <UdxNode name="DataList2" type="DTKT_LIST" size="23543" description="单个时间段中的uv值">
+            	<UdxNode name="DataIndex" type="DTKT_REAL | DTKT_LIST" size="2" description="每个三角形中心点的UV值"></UdxNode>
             </UdxNode>
         </UdxNode>
     </UdxNode>

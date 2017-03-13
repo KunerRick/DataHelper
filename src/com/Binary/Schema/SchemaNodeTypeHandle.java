@@ -3,6 +3,9 @@ package com.Binary.Schema;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.Binary.BinNode.BinNode;
+import com.Binary.BinNode.BinRealListNode;
+
 public class SchemaNodeTypeHandle {
 	final static Logger logger = LoggerFactory.getLogger(SchemaNodeTypeHandle.class);
 	
@@ -131,6 +134,30 @@ public class SchemaNodeTypeHandle {
 				
 		}
 		return SchemaNodeType;
+	}
+	
+	/**
+	 * 实例化为具体的数据类型的节点(未齐全)
+	 * @param NodeType
+	 * @return
+	 */
+	public static  BinNode instantiateBinNode(ESchemaNodeType NodeType){
+		if(NodeType==null){
+			logger.warn("the NodeType in instantiateBinNode is null.");
+			return null;
+		}
+		BinNode binNode=null;
+		switch(NodeType){
+		case EDTKT_LIST:
+			binNode=new BinNode();
+			break;
+		case EDTKT_REAL_LIST:
+			binNode = new BinRealListNode();
+			break;
+		default:
+			return null;		
+		}
+		return binNode;
 	}
 
 }
